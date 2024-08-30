@@ -1,4 +1,4 @@
-import Navigation from "@/app/components/primitives";
+import Navigation from "@/app/components/1_Navigation";
 import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code";
