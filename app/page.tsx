@@ -3,6 +3,7 @@ import QnScreen from "@/app/components/2_Main";
 import TrackScreen from "@/app/components/3_Track";
 
 export default function Home() {
+  try {
   return (
     <main className="flex flex-col border-4 h-screen">
       <div className="border-2"> < Navigation /> </div>
@@ -13,4 +14,7 @@ export default function Home() {
 
     </main>
   )
+  } catch(e) {
+    return <></>
+  }
 }
