@@ -32,7 +32,7 @@ const QnScreen = (props: any) => {
             {
                 data != null && (
                     <>
-                        {
+                        {/*
                             data.map((val, ind) => {
                                 return (
                                     <RadioGroup label={ind + 1 + ') ' + val.qn} className="flex my-2" >
@@ -65,7 +65,7 @@ const QnScreen = (props: any) => {
                         }
                         <button onClick={handle}> Show </button>
                     </>
-                )
+                */)
             }
         </section>
     )
