@@ -62,10 +62,10 @@ const QnScreen = (props: any) => {
                                     </RadioGroup>
                                 )
                             })
-                        }
+                */ }
                         <button onClick={handle}> Show </button>
                     </>
-                */)
+                )
             }
         </section>
     )
