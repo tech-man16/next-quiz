@@ -8,6 +8,7 @@ const QnScreen = (props: any) => {
     const [data, updateData] = useState<any[]>();
 
     //var data :any;
+    /*
     useEffect(() => {
         (async () => {
             const data = await search();
@@ -24,7 +25,7 @@ const QnScreen = (props: any) => {
 
     }, [])
 
-
+    */
     return (
         <section className="flex flex-col flex-1 overflow-auto h-full mx-auto max-w-7xl py-8 px-6">
 
@@ -66,9 +67,6 @@ const QnScreen = (props: any) => {
                     </>
                 )
             }
-
-
-
         </section>
     )
 }
