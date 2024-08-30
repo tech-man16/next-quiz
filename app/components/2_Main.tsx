@@ -5,7 +5,7 @@ import { RadioGroup, Radio } from "@nextui-org/react";
 
 const QnScreen = (props: any) => {
     const qns = { 1: "a\n    b", 2: "b", 3: "c", 4: "d", 5: "e", 6: "f", 7: "g" }
-    const [data, updateData] = useState<any[]>();
+    const [data, updateData] = useState<any[]>(); 
     
     //var data :any;
     /*
