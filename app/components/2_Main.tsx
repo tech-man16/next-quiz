@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { handle, search } from "@/app/server-actions/actions";
-//import { RadioGroup, Radio } from "@nextui-org/radio";
+import { RadioGroup, Radio } from "@nextui-org/radio";
 
 const QnScreen = (props: any) => {
     const qns = { 1: "a\n    b", 2: "b", 3: "c", 4: "d", 5: "e", 6: "f", 7: "g" }
