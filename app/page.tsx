@@ -1,6 +1,7 @@
-import Navigation from "@/app/components/1_Navigation";
-import QnScreen from "@/app/components/2_Main";
-import TrackScreen from "@/app/components/3_Track";
+import React from "react";
+import Navigation from "./components/1_Navigation";
+import QnScreen from "./components/2_Main";
+import TrackScreen from "./components/3_Track";
 
 export default function Home() {
   try {
