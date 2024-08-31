@@ -7,9 +7,7 @@ const QnScreen = (props: any) => {
     const qns = { 1: "a\n    b", 2: "b", 3: "c", 4: "d", 5: "e", 6: "f", 7: "g" }
     const [data, updateData] :any = useState(); 
     
-    useEffect(()=>{
-        search().then(data=>{console.log(data)})
-    },[]);
+    
     
     //var data :any;
     /*
@@ -36,7 +34,7 @@ const QnScreen = (props: any) => {
             {
                 data != undefined && (
                     <>
-                        {data.url
+                        {
                             /*
                             data.map((val, ind) => {
                                 return (
@@ -70,7 +68,7 @@ const QnScreen = (props: any) => {
                             <button onClick={handle}> Show </button>
                 */ 
                         }
-                        
+                        <button onClick={search}> Get </button>
                     </>
                 )
             }
