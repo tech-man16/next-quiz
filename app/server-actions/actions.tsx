@@ -7,7 +7,7 @@ const handle = (e: any) => {
 
 const search = async () => {
     //const url = process.env.VERCEL_URL != undefined ? process.env.VERCEL_URL : 'http://localhost:3000'
-    const req = await fetch(path.join(process.cwd(), "/app/server-actions/getdata"), {
+    const req = await fetch(path.join(process.cwd(), "/server-actions/getdata"), {
         method: "Post",
         body: ""
     })
