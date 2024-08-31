@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = { 
-  output:"public/build"
+  output:"standalone"
 
 export default nextConfig;
