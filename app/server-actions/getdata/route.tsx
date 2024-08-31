@@ -12,4 +12,4 @@ export async function POST(req: NextRequest) {
     const p_data = {url: req.nextUrl.pathname} ;
     return NextResponse.json(p_data);
 }
-export const dynamic = "force-static";
+
