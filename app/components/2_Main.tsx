@@ -12,7 +12,7 @@ const QnScreen = (props: any) => {
     //var data :any;
     useEffect(() => {
         (async () => {
-            const data = await search();
+            const data = search();
             console.log(data) ;
             return data;
         })()
