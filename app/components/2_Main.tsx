@@ -1,12 +1,12 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { handle, search } from "@/app/server-actions/actions";
+//import { handle, search } from "@/app/server-actions/actions";
 import { RadioGroup, Radio } from "@nextui-org/react";
 
 const QnScreen = (props: any) => {
     const qns = { 1: "a\n    b", 2: "b", 3: "c", 4: "d", 5: "e", 6: "f", 7: "g" }
     const [data, updateData] :any = useState(); 
-
+    /*
     useEffect(()=>{
         (async()=>{
             const data = await search();
@@ -17,6 +17,7 @@ const QnScreen = (props: any) => {
                 updateData(data);
             });
     },[])
+    
     //var data :any;
     /*
     useEffect(() => {
@@ -73,8 +74,10 @@ const QnScreen = (props: any) => {
                                     </RadioGroup>
                                 )
                             })
-                */ }
-                        <button onClick={handle}> Show </button>
+                            <button onClick={handle}> Show </button>
+                */ 
+                        }
+                        
                     </>
                 )
             }
