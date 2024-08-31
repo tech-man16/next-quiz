@@ -3,8 +3,8 @@ import { promises as fs } from "fs";
 
 import { NextRequest, NextResponse } from 'next/server';
 
-export const function GET(){
-    return NextResponse.json({message: "Fetched Successfully !!" , status:200},{status:200})
+export async function GET(req: NextRequest){
+    return NextResponse.json({message: "Fetched Successfully !!" , status:200},{status:200}) ;
 }
 
 export async function POST(req: NextRequest) {
