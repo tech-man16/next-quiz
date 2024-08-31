@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  output:"serverless",
-  
-};
+const nextConfig = { 
+  exportPathMap: async () => ({ ...defaultPathMap, outDir: 'public/build' }) }
 
 export default nextConfig;
