@@ -8,10 +8,9 @@ const QnScreen = (props: any) => {
     const [data, updateData] :any = useState(); 
     const [cnt,updateCnt] = useState(0);
     useEffect(()=>{
-        
         alert("Executed !!");
         updateCnt((pcnt)=>pcnt+1) ;
-    },[])
+    },[]);
     
     //var data :any;
     /*
@@ -34,8 +33,8 @@ const QnScreen = (props: any) => {
     */
     return (
         <section className="flex flex-col flex-1 overflow-auto h-full mx-auto max-w-7xl py-8 px-6">
-            <Button onClick={ handle } }> Get </Button>
-        </section>
+            <Button onClick={handle}> Get </Button>
+        
             {/*
                 data != undefined && (
                     <>
@@ -77,7 +76,7 @@ const QnScreen = (props: any) => {
                     </>
                 )
             */  }
-        
+        </section>
     )
 }
 
