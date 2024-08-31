@@ -8,7 +8,7 @@ export async function GET(req: NextRequest){
 }
 
 export async function POST(req: NextRequest) {
-    const data = await fs.readFile(path.join(process.cwd(), "app/files/MCQ-1.json"), "utf-8");
+   // const data = await fs.readFile(path.join(process.cwd(), "app/files/MCQ-1.json"), "utf-8");
     const data = await fs.readFile("./app/files/MCQ-1.json", "utf-8");
     const p_data = JSON.parse(data);
     //const p_data = {url: req.nextUrl.pathname} ;
