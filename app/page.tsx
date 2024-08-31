@@ -1,4 +1,5 @@
 import Navigation from "@/app/components/1_Navigation";
+import QnScreen from "./components/2_Main";
 import TrackScreen from "@/app/components/3_Track";
 import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
