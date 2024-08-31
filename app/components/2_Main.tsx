@@ -6,8 +6,12 @@ import { RadioGroup, Radio, Button } from "@nextui-org/react";
 const QnScreen = (props: any) => {
     const qns = { 1: "a\n    b", 2: "b", 3: "c", 4: "d", 5: "e", 6: "f", 7: "g" }
     const [data, updateData] :any = useState(); 
-    
-    
+    const [cnt,updateCnt] = useState(0);
+    useEffect(()=>{
+        
+        alert("Executed !!");
+        updateCnt((pcnt)=>pcnt+1) ;
+    },[])
     
     //var data :any;
     /*
