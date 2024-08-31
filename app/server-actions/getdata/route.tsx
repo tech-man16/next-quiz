@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
         //const p_data = {url: req.nextUrl.pathname} ;
         return NextResponse.json(p_data, {status:200});
     }catch (e){
-        return NextResponse.json({"message":"Not Successfull","error":e} , {status:500});
+        return NextResponse.json({"message":"Not Successfull","error":e,"path":path.join(__dirname,"MCQ-1.json")} , {status:500});
     }
 }
 
