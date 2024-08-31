@@ -5,34 +5,26 @@ import { RadioGroup, Radio, Button } from "@nextui-org/react";
 
 const QnScreen = (props: any) => {
     const qns = { 1: "a\n    b", 2: "b", 3: "c", 4: "d", 5: "e", 6: "f", 7: "g" }
-    const [data, updateData] :any = useState(); 
-    const [cnt,updateCnt] = useState(0);
+    const [data, updateData] :any = useState();     
     
-    
-    //var data :any;
     useEffect(() => {
         (async () => {
             const data = await search();
-            //console.log(data) ;
             return data;
         })()
             .then((data) => {
-                console.log(data);
-                /*
                 data.forEach((qns: any, ind: number) => {
                     if (qns.codeblock != undefined) {
                         data[ind].codeblock = data[ind].codeblock.replaceAll(" ", "\xa0")
                     }
                 })
                 updateData(data)
-                */
             });
-
     }, []);
     
     return (
         <section className="flex flex-col flex-1 overflow-auto h-full mx-auto max-w-7xl py-8 px-6">        
-            {/*
+            {
                 data != undefined && (
                     <>
                         {
@@ -68,7 +60,7 @@ const QnScreen = (props: any) => {
                         <button onClick={handle}> Show </button>
                     </>
                 )
-             */}
+             }
         </section>
     )
 }
