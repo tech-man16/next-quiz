@@ -8,14 +8,7 @@ const QnScreen = (props: any) => {
     const [data, updateData] :any = useState(); 
     
     useEffect(()=>{
-        (async()=>{
-            const data = await search();
-            return data;
-        })()
-            .then(data=>{
-                console.log(data) ; 
-                updateData(data);
-            });
+        search().then(data=>{console.log(data)})
     },[]);
     
     //var data :any;
