@@ -34,7 +34,7 @@ const QnScreen = (props: any) => {
     */
     return (
         <section className="flex flex-col flex-1 overflow-auto h-full mx-auto max-w-7xl py-8 px-6">
-            <Button onClick={ ()=>{ alert("Clicked !!") } }> Get </Button>
+            <Button onClick={ handle } }> Get </Button>
             {/*
                 data != undefined && (
                     <>
