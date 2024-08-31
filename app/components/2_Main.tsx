@@ -12,8 +12,8 @@ const QnScreen = (props: any) => {
     //var data :any;
     useEffect(() => {
         (async () => {
-            const data = search();
-            console.log(data) ;
+            const data = await search();
+            //console.log(data) ;
             return data;
         })()
             .then((data) => {
