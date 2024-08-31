@@ -16,19 +16,22 @@ const QnScreen = (props: any) => {
             return data;
         })()
             .then((data) => {
+                console.log(data);
+                /*
                 data.forEach((qns: any, ind: number) => {
                     if (qns.codeblock != undefined) {
                         data[ind].codeblock = data[ind].codeblock.replaceAll(" ", "\xa0")
                     }
                 })
                 updateData(data)
+                */
             });
 
     }, []);
     
     return (
         <section className="flex flex-col flex-1 overflow-auto h-full mx-auto max-w-7xl py-8 px-6">        
-            {
+            {/*
                 data != undefined && (
                     <>
                         {
@@ -64,7 +67,7 @@ const QnScreen = (props: any) => {
                         <button onClick={handle}> Show </button>
                     </>
                 )
-             }
+             */}
         </section>
     )
 }
