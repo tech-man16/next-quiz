@@ -5,8 +5,18 @@ import { RadioGroup, Radio } from "@nextui-org/react";
 
 const QnScreen = (props: any) => {
     const qns = { 1: "a\n    b", 2: "b", 3: "c", 4: "d", 5: "e", 6: "f", 7: "g" }
-    const [data, updateData] = useState<any[]>(); 
-    
+    const [data, updateData] :any = useState(); 
+
+    useEffect(()=>{
+        (async()=>{
+            const data = await search();
+            return data;
+        })()
+            .then(data=>{
+                console.log(data) ; 
+                updateData(data);
+            });
+    },[])
     //var data :any;
     /*
     useEffect(() => {
@@ -30,9 +40,10 @@ const QnScreen = (props: any) => {
         <section className="flex flex-col flex-1 overflow-auto h-full mx-auto max-w-7xl py-8 px-6">
 
             {
-                data != null && (
+                data != undefined && (
                     <>
-                        {/*
+                        {data.url
+                            /*
                             data.map((val, ind) => {
                                 return (
                                     <RadioGroup label={ind + 1 + ') ' + val.qn} className="flex my-2" >
