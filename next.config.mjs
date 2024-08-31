@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = { 
-  output:"serverless"
+  output:"public/build"
 }
 
 export default nextConfig;
