@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { handle, search } from "@/app/server-actions/actions";
-import { RadioGroup, Radio } from "@nextui-org/react";
+import { RadioGroup, Radio, Button } from "@nextui-org/react";
 
 const QnScreen = (props: any) => {
     const qns = { 1: "a\n    b", 2: "b", 3: "c", 4: "d", 5: "e", 6: "f", 7: "g" }
@@ -30,8 +30,8 @@ const QnScreen = (props: any) => {
     */
     return (
         <section className="flex flex-col flex-1 overflow-auto h-full mx-auto max-w-7xl py-8 px-6">
-
-            {
+            <Button> Get </Button>
+            {/*
                 data != undefined && (
                     <>
                         {
@@ -66,12 +66,12 @@ const QnScreen = (props: any) => {
                                 )
                             })
                             <button onClick={handle}> Show </button>
-                */ 
+               
                         }
-                        <button onClick={search}> Get </button>
+                        
                     </>
                 )
-            }
+            */  }
         </section>
     )
 }
