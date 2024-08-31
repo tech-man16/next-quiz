@@ -1,5 +1,5 @@
 import Navigation from "@/app/components/1_Navigation";
-import TrackScreen from "./components/3_Track";
+import TrackScreen from "@/app/components/3_Track";
 import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code";
