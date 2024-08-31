@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
         const data = await fs.readFile(path.join(process.cwd(),"/app/files/MCQ-1.json"), "utf-8");
         const p_data = JSON.parse(data);
         //const p_data = {url: req.nextUrl.pathname} ;
-        return NextResponse.json(p_data, {status:200});
+        return NextResponse.json({ data:p_data, status:200 }, {status:200});
     }catch (e){
         return NextResponse.json({"message":"Not Successfull","error":e,"path":path.join(__dirname,"MCQ-1.json")} , {status:500});
     }
