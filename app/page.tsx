@@ -63,7 +63,7 @@ export default function Home() {
       <main className="flex flex-col border-4 h-screen">
         <div className="border-2"> < Navigation /> </div>
         <div className="flex flex-1 border-2 h-2/3">
-          <div className="flex flex-1 border-2"><QnScreen /></div>
+          {/*<div className="flex flex-1 border-2"><QnScreen /></div>*/}
           <div className="border-2"> <TrackScreen /> </div>
         </div>
       </main>
