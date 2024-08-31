@@ -1,5 +1,5 @@
 //"use server";
-//import path from "path";
+import path from "path";
 const handle = (e: any) => {
     e.preventdefault();
     console.log(e.target.value);
@@ -7,7 +7,7 @@ const handle = (e: any) => {
 
 const search = async () => {
     //const url = process.env.VERCEL_URL != undefined ? process.env.VERCEL_URL : 'http://localhost:3000'
-    const req = await fetch("./app/server-actions/getdata", {
+    const req = await fetch(path.join(process.cwd(), "/app/server-actions/getdata"), {
         method: "Post",
         body: ""
     })
