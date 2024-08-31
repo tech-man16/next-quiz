@@ -7,14 +7,18 @@ const handle = (e: any) => {
 
 const search = async () => {
     //const url = process.env.VERCEL_URL != undefined ? process.env.VERCEL_URL : 'http://localhost:3000'
-    const req = await fetch(path.join(process.cwd(), "/server-actions/getdata"), {
-        method: "Post",
-        body: ""
-    })
-    const res = await req.json();
-    if(res.status==200)
-        return res.data;
-    return res.message ;
+    try {
+        const req = await fetch(path.join(process.cwd(), "/server-actions/getdata"), {
+            method: "Post",
+            body: ""
+        })
+        const res = await req.json();
+        if(res.status==200)
+            return res.data;
+        return res.message ;
+    } catch(e) {
+        return ["error"] ;
+    }
 }
 
 export { handle, search }
