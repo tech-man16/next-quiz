@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = { 
-  output:"public"
+  output:"public/build"
 
 export default nextConfig;
