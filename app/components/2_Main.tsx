@@ -32,7 +32,7 @@ const QnScreen = (props: any) => {
                 data != undefined && (
                     <>
                         {
-                            data.map((val, ind) => {
+                            data.map((val:any, ind:number) => {
                                 return (
                                     <RadioGroup key={ind} label={ind + 1 + ') ' + val.qn} className="flex my-2" >
                                         {
