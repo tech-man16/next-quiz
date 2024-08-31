@@ -7,13 +7,9 @@ const QnScreen = (props: any) => {
     const qns = { 1: "a\n    b", 2: "b", 3: "c", 4: "d", 5: "e", 6: "f", 7: "g" }
     const [data, updateData] :any = useState(); 
     const [cnt,updateCnt] = useState(0);
-    useEffect(()=>{
-        alert("Executed !!");
-        updateCnt((pcnt)=>pcnt+1) ;
-    },[]);
+    
     
     //var data :any;
-    /*
     useEffect(() => {
         (async () => {
             const data = await search();
@@ -28,18 +24,16 @@ const QnScreen = (props: any) => {
                 updateData(data)
             });
 
-    }, [])
-
-    */
+    }, []);
+    
     return (
         <section className="flex flex-col flex-1 overflow-auto h-full mx-auto max-w-7xl py-8 px-6">
             <Button onClick={handle}> Get </Button>
         
-            {/*
+            {
                 data != undefined && (
                     <>
                         {
-                            /*
                             data.map((val, ind) => {
                                 return (
                                     <RadioGroup label={ind + 1 + ') ' + val.qn} className="flex my-2" >
@@ -75,7 +69,7 @@ const QnScreen = (props: any) => {
                         
                     </>
                 )
-            */  }
+             }
         </section>
     )
 }
