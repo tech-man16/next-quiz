@@ -34,10 +34,10 @@ const QnScreen = (props: any) => {
                         {
                             data.map((val, ind) => {
                                 return (
-                                    <RadioGroup label={ind + 1 + ') ' + val.qn} className="flex my-2" >
+                                    <RadioGroup key={ind} label={ind + 1 + ') ' + val.qn} className="flex my-2" >
                                         {
                                             val.codeblock != undefined && (
-                                                <> {val.codeblock.split('\n').map((line: any) => <p>{line} </p>)} </>
+                                                <> {val.codeblock.split('\n').map((line: any,ind:number) => <p key={ind} >{line} </p>)} </>
                                             )
                                         }
                                         {Array.isArray(val.options) && (
@@ -51,7 +51,7 @@ const QnScreen = (props: any) => {
                                     </RadioGroup>
                                 )
                                 return (
-                                    <RadioGroup label={ind + 1 + ') ' + val.qn} className="flex my-2" >
+                                    <RadioGroup key={ind} label={ind + 1 + ') ' + val.qn} className="flex my-2" >
                                         {val["options"].map((val: any, ind: number) => {
                                             return <Radio key={ind} value={val} className="flex text-amber-400 my-1" >
                                                 <span className="text-white w-full"> {val} </span>
