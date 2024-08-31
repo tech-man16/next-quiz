@@ -13,8 +13,8 @@ const search = async () => {
     })
     const res = await req.json();
     if(res.status==200)
-        return res.message;
-    return ["No data found!!!"] ;
+        return res.data;
+    return res.message ;
 }
 
 export { handle, search }
